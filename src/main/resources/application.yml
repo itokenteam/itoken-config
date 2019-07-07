@@ -1,5 +1,5 @@
 server:
-  port: 3344
+  port: 8888
 spring:
   application:
     name: itoken-config
@@ -7,4 +7,20 @@ spring:
     config:
       server:
         git:
-          uri: git@github.com:itokenteam/itoken-config.git   #github地址
+          uri: https://github.com/itokenteam/itoken-config.git   #github地址
+          search-paths: respo
+          username: happy_zhu@163.com
+          password: zxm19930702
+      label: master
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/,http://localhost:7002/eureka/,http://localhost:7003/eureka/
+  instance:
+    instance-id: cloud-config-8888
+    prefer-ip-address: true
+info:
+  app.name: qianfeng
+  company.name: www.zhu.com
+  buider.artifactId: $project.artifactId$
+  builder.version: $project.version$
