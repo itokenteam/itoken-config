@@ -1,0 +1,30 @@
+server:
+  port: 9527
+spring:
+  application:
+    name: zuul
+  zipkin:
+    base-url: http://192.168.0.100:9411
+  boot:
+    admin:
+      client:
+        url: http://192.168.0.100:8084
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.0.100:8761/eureka/,http://192.168.0.100:8762/eureka/
+  instance:
+    instance-id: 192.168.0.100
+    prefer-ip-address: true
+info:
+  app.name: atguigu
+  company.name: www.atguigu.com
+  buider.artifactId: $project.artifactId$
+  builder.version: $project.version$
+zuul:
+  prefix: /myshop #添加统一的入口
+  ignored-services: "*" #禁止从http://servicezuul.com:9527/servicecloud-provid/zuul入口访问
+  routes:
+    mydept.serviceId: user
+    mydept.path: /user/** #允许从从http://servicezuul.com:9527/dept/zuul入口访问
+
