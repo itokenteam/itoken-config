@@ -9,7 +9,7 @@
         <relativePath>../itoken-dependencies/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
+    <version>1.0.0</version>
     <artifactId>itoken-config</artifactId>
     <packaging>jar</packaging>
 
