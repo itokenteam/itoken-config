@@ -8,7 +8,7 @@ spring:
       client:
         url: http//localhost:8084
   datasource:
-    url: jdbc:mysql://localhost:3306/itoken?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
+    url: jdbc:mysql://localhost:3306/study?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
     driver-class-name: com.mysql.jdbc.Driver
     password: 19930702
     username: root
