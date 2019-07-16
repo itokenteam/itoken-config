@@ -37,7 +37,8 @@ spring:
     # 合并多个DruidDataSource的监控数据
     useGlobalDataSourceStat: true
 mybatis:
-  config-location: classpath:/mybatis/mybatis-config.xml
+  type-aliases-package: com.zhu.itoken.service.admin.domain
+  #config-location: classpath:/mybatis/mybatis-config.xml
   mapper-locations: classpath:/mybatis/mapper/*.xml
 management:
   endpoint:
