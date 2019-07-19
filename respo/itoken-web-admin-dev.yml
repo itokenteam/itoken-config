@@ -32,7 +32,7 @@ server:
   port: 8280
 feign:
   hystrix:
-    enable: true
+    enabled: true
 info:
   app.name: itoken-service-admin
   company.name: www.zhu.com
