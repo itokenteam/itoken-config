@@ -7,6 +7,10 @@ spring:
     admin:
       client:
         url: http//localhost:8084
+  redis:
+    database: 0
+    host: 192.168.0.100
+    port: 6379
   datasource:
     url: jdbc:mysql://localhost:3306/itoken?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
     driver-class-name: com.mysql.jdbc.Driver
