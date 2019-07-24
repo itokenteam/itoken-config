@@ -40,6 +40,8 @@ mybatis:
   type-aliases-package: com.zhu.itoken.common.domain
   #config-location: classpath:/mybatis/mybatis-config.xml
   mapper-locations: classpath:/mybatis/mapper/*.xml
+  configuration:
+    cache-enabled: true
 management:
   endpoint:
     health:
